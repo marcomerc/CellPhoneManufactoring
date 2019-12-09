@@ -1,22 +1,6 @@
 
-class Apple extends Maker{
-	
-	private static Maker onlyApple = null;
+class Apple extends Maker{	
 
-	private  Apple() {};
-	
-	public static Maker instance() {
-		if(onlyApple ==null) {
-			onlyApple = new Apple();
-		}
-		return onlyApple;
-		
-	}
-	
-	
-	
-	
-	
 	@Override
 	CellPhone whatTypeOfPhone(String Type) {
 		if(Type == "iPhone 11") {
